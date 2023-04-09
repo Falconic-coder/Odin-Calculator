@@ -1,0 +1,87 @@
+html, body{
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #FEFAE0;
+    color: #000000;
+}
+
+*{
+    font-family: 'Anuphan', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FAEDCD;
+    border: 2px solid black;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+}
+
+.buttons, .numberAndOperator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.controls , .numberAndOperator > div{
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.controls > button{
+    width: 100%;
+}
+
+button#clear{
+    background-color: #CCD5AE;
+}
+
+button#del{
+    background-color: #E9EDC9;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #FEFAE0;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 100;
+    outline: none;
+    border: 2px solid black;
+}
+
+
+.resultDisplay{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FEFAE0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.resultDisplay > div{
+    text-align: end;
+}
+
+.resultDisplay > .screen-current{
+    font-weight: 600;
+    font-size: 50px;
+    margin: 10px;
+}
